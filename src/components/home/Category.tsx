@@ -64,6 +64,8 @@ const Category: React.FC = () => {
 
     console.log("Added to cart:", selectedItem);
     addToCart(selectedItem);
+    setPopupMessage(`${item.name} added to cart!`);
+    setShowPopup(true);
   };
 
   return (
